@@ -1,4 +1,4 @@
-## Copyright 2024 Kaden Bilyeu (Bikatr7) (https://github.com/Bikatr7) (https://github.com/Bikatr7/Kairyou)
+## Copyright 2024 Kaden Bilyeu (https://github.com/ktbilyeu) (https://github.com/ktbilyeu/Kairyou)
 ## Use of this source code is governed by a GNU Lesser General Public License v2.1
 ## license that can be found in the LICENSE file.
 
@@ -72,7 +72,7 @@ class InvalidReplacementJsonKeys(KairyouException):
     message = """
     Invalid replacement json file. 
     Your json must contain the following keys for a kudasai json table : kutouten, unicode, phrases, single_words, enhanced_check_whitelist, full_names, single_names, name_like, and honorifics, or specials, basic, names, full-names, single-names, and name-like for a fukuin table.
-    Please see https://github.com/Bikatr7/Kairyou/tree/main/examples for an example replacement json file."
+    Please see https://github.com/ktbilyeu/Kairyou/tree/main/examples for an example replacement json file."
     """
 
 ##-------------------start-of-InvalidReplacementJsonPath---------------------------------------------------------------------------------------------------------------------------------------------------------------------------

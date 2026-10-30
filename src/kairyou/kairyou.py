@@ -1,4 +1,4 @@
-## Copyright 2024 Kaden Bilyeu (Bikatr7) (https://github.com/Bikatr7) (https://github.com/Bikatr7/Kairyou)
+## Copyright 2024 Kaden Bilyeu (https://github.com/ktbilyeu) (https://github.com/ktbilyeu/Kairyou)
 ## Use of this source code is governed by a GNU Lesser General Public License v2.1
 ## license that can be found in the LICENSE file.
 
@@ -45,8 +45,8 @@ class Kairyou:
     ##------------------------/
 
     ## Supported types of json files.
-    ## Kudasai is kairyou's native json format. See https://github.com/Bikatr7/Kairyou/blob/main/examples/blank_kudasai.json
-    ## Fukuin is the format used by the original onegai processor and kroatoan's Fukuin. See https://github.com/Bikatr7/Kairyou/tree/main/examples/blank_fukuin.json
+    ## Kudasai is kairyou's native json format. See https://github.com/ktbilyeu/Kairyou/blob/main/examples/blank_kudasai.json
+    ## Fukuin is the format used by the original onegai processor and kroatoan's Fukuin. See https://github.com/ktbilyeu/Kairyou/tree/main/examples/blank_fukuin.json
     _json_type:typing.Literal["kudasai", "fukuin"] = "kudasai"
 
     _replacement_rules:typing.List = _kudasai_replacement_rules

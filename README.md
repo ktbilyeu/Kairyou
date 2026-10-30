@@ -209,11 +209,11 @@ For a thorough explanation of the conditions and how they may apply to your use 
 
 **Contact**<a name="contact"></a>
 
-If you have any questions or suggestions, feel free to reach out to me at [Bikatr7@proton.me](mailto:Bikatr7@proton.me)
+If you have any questions or suggestions, feel free to reach out to me at [kadenbilyeu@proton.me](mailto:kadenbilyeu@proton.me)
 
-Also feel free to check out the [GitHub repository](https://github.com/Bikatr7/Kairyou) for this project.
+Also feel free to check out the [GitHub repository](https://github.com/ktbilyeu/Kairyou) for this project.
 
-Or the issue tracker [here](https://github.com/Bikatr7/Kairyou/issues).
+Or the issue tracker [here](https://github.com/ktbilyeu/Kairyou/issues).
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -225,7 +225,7 @@ Contributions are welcome! I don't have a specific format for contributions, but
 
 **Notes**<a name="notes"></a>
 
-Kairyou was originally developed as a part of [Kudasai](https://github.com/Bikatr7/Kudasai), a Japanese preprocessor later turned Machine Translator. It was later split off into its own package to be used independently of Kudasai for multiple reasons.
+Kairyou was originally developed as a part of [Kudasai](https://github.com/ktbilyeu/Kudasai), a Japanese preprocessor later turned Machine Translator. It was later split off into its own package to be used independently of Kudasai for multiple reasons.
 
 Kairyou gets its name from the Japanese word "Reform" (改良) which is pronounced "Kairyou". Which was chosen for two reasons, the first being that it was chosen during a large Kudasai rework, and the second being that it is a Japanese preprocessor, and the name seemed fitting.
 
