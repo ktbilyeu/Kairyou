@@ -2,4 +2,4 @@
 ## Use of this source code is governed by a GNU Lesser General Public License v2.1
 ## license that can be found in the LICENSE file.
 
-VERSION = "1.6.8"
+VERSION = "1.7.0.post1"

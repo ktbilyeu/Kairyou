@@ -1,0 +1,49 @@
+name: Publish metadata post-release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Exact post-release version to publish
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.1.0
+        with:
+          python-version: '3.11'
+      - name: Install build tools
+        run: python -m pip install build twine
+      - name: Verify post-release version
+        env:
+          EXPECTED_VERSION: ${{ inputs.version }}
+        run: |
+          python - <<'PY'
+          import os
+          import runpy
+          import tomllib
+          from pathlib import Path
+          from packaging.version import Version
+
+          expected = Version(os.environ['EXPECTED_VERSION'])
+          project = tomllib.loads(Path('pyproject.toml').read_text())['project']
+          runtime = runpy.run_path('src/kairyou/version.py')['VERSION']
+          assert expected.is_postrelease, 'Only metadata post-releases are supported'
+          assert Version(project['version']) == Version(runtime) == expected
+          PY
+      - name: Build and check distributions
+        run: |
+          python -m build
+          python -m twine check dist/*
+      - name: Publish to PyPI
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+        run: python -m twine upload --non-interactive dist/*
